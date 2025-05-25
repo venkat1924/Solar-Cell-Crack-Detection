@@ -1,0 +1,190 @@
+nohup: ignoring input
+/home/csegpuserver/miniconda3/lib/python3.13/site-packages/albumentations/__init__.py:28: UserWarning: A new version of Albumentations is available: '2.0.7' (you have '2.0.6'). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+/home/csegpuserver/miniconda3/lib/python3.13/site-packages/timm/models/_factory.py:126: UserWarning: Mapping deprecated model name xception to current legacy_xception.
+  model = create_fn(
+Using device: cuda
+Loading ELPV dataset...
+Dataset loaded. Total samples: 2624
+Class distribution: 0s=1803, 1s=821
+Train samples: 1836 (0s: 1262, 1s: 574)
+Val samples: 394 (0s: 270, 1s: 124)
+Test samples: 394 (0s: 271, 1s: 123)
+Calculated pos_weight: 2.1986 (Neg/Pos = 1262/574)
+Starting training...
+Epoch 1/10000: LR: 1.0e-04 | Train L: 0.7596, A: 0.7056 | Val L: 0.5436, A: 0.8147, P: 0.6809, R: 0.7742, F1: 0.7245, AUC: 0.9016
+  ↳ New best Val F1: 0.7245. Model saved to best_microcrack_detector.pth
+Epoch 2/10000: LR: 1.0e-04 | Train L: 0.6207, A: 0.7955 | Val L: 0.5103, A: 0.8249, P: 0.6871, R: 0.8145, F1: 0.7454, AUC: 0.9176
+  ↳ New best Val F1: 0.7454. Model saved to best_microcrack_detector.pth
+Epoch 3/10000: LR: 1.0e-04 | Train L: 0.5605, A: 0.8180 | Val L: 0.4457, A: 0.8731, P: 0.7803, R: 0.8306, F1: 0.8047, AUC: 0.9338
+  ↳ New best Val F1: 0.8047. Model saved to best_microcrack_detector.pth
+Epoch 4/10000: LR: 1.0e-04 | Train L: 0.5121, A: 0.8300 | Val L: 0.4371, A: 0.8604, P: 0.7379, R: 0.8629, F1: 0.7955, AUC: 0.9400
+Epoch 5/10000: LR: 1.0e-04 | Train L: 0.4758, A: 0.8525 | Val L: 0.4367, A: 0.8426, P: 0.7123, R: 0.8387, F1: 0.7704, AUC: 0.9386
+Epoch 6/10000: LR: 1.0e-04 | Train L: 0.4350, A: 0.8673 | Val L: 0.4304, A: 0.8756, P: 0.8099, R: 0.7903, F1: 0.8000, AUC: 0.9436
+Epoch 7/10000: LR: 1.0e-04 | Train L: 0.4279, A: 0.8772 | Val L: 0.4689, A: 0.8883, P: 0.8509, R: 0.7823, F1: 0.8151, AUC: 0.9435
+  ↳ New best Val F1: 0.8151. Model saved to best_microcrack_detector.pth
+Epoch 8/10000: LR: 1.0e-04 | Train L: 0.4243, A: 0.8728 | Val L: 0.4368, A: 0.8832, P: 0.8047, R: 0.8306, F1: 0.8175, AUC: 0.9496
+  ↳ New best Val F1: 0.8175. Model saved to best_microcrack_detector.pth
+Epoch 9/10000: LR: 1.0e-04 | Train L: 0.3683, A: 0.8827 | Val L: 0.4005, A: 0.8807, P: 0.7984, R: 0.8306, F1: 0.8142, AUC: 0.9573
+Epoch 10/10000: LR: 1.0e-04 | Train L: 0.3605, A: 0.8958 | Val L: 0.5601, A: 0.8858, P: 0.8496, R: 0.7742, F1: 0.8101, AUC: 0.9290
+  ↳ Periodic checkpoint saved to checkpoints/epoch_010_f1_0.8101.pth
+Epoch 11/10000: LR: 1.0e-04 | Train L: 0.3463, A: 0.9095 | Val L: 0.4492, A: 0.9061, P: 0.8655, R: 0.8306, F1: 0.8477, AUC: 0.9544
+  ↳ New best Val F1: 0.8477. Model saved to best_microcrack_detector.pth
+Epoch 12/10000: LR: 1.0e-04 | Train L: 0.3348, A: 0.9090 | Val L: 0.4667, A: 0.9010, P: 0.8512, R: 0.8306, F1: 0.8408, AUC: 0.9516
+Epoch 13/10000: LR: 1.0e-04 | Train L: 0.3203, A: 0.9139 | Val L: 0.5220, A: 0.8985, P: 0.8500, R: 0.8226, F1: 0.8361, AUC: 0.9441
+Epoch 14/10000: LR: 1.0e-04 | Train L: 0.3150, A: 0.9013 | Val L: 0.5093, A: 0.8807, P: 0.7619, R: 0.9032, F1: 0.8266, AUC: 0.9520
+Epoch 15/10000: LR: 1.0e-04 | Train L: 0.2893, A: 0.9205 | Val L: 0.5330, A: 0.8756, P: 0.7907, R: 0.8226, F1: 0.8063, AUC: 0.9502
+Epoch 16/10000: LR: 1.0e-04 | Train L: 0.2767, A: 0.9178 | Val L: 0.5298, A: 0.8985, P: 0.8281, R: 0.8548, F1: 0.8413, AUC: 0.9464
+Epoch 17/10000: LR: 1.0e-04 | Train L: 0.2751, A: 0.9287 | Val L: 0.5869, A: 0.8985, P: 0.8684, R: 0.7984, F1: 0.8319, AUC: 0.9412
+Epoch 18/10000: LR: 1.0e-05 | Train L: 0.2498, A: 0.9342 | Val L: 0.5495, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9484
+  ↳ New best Val F1: 0.8490. Model saved to best_microcrack_detector.pth
+Epoch 19/10000: LR: 1.0e-05 | Train L: 0.2509, A: 0.9309 | Val L: 0.4988, A: 0.8985, P: 0.8387, R: 0.8387, F1: 0.8387, AUC: 0.9543
+Epoch 20/10000: LR: 1.0e-05 | Train L: 0.2300, A: 0.9402 | Val L: 0.5511, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9542
+  ↳ Periodic checkpoint saved to checkpoints/epoch_020_f1_0.8465.pth
+Epoch 21/10000: LR: 1.0e-05 | Train L: 0.2391, A: 0.9386 | Val L: 0.5285, A: 0.9086, P: 0.8729, R: 0.8306, F1: 0.8512, AUC: 0.9561
+  ↳ New best Val F1: 0.8512. Model saved to best_microcrack_detector.pth
+Epoch 22/10000: LR: 1.0e-05 | Train L: 0.2037, A: 0.9490 | Val L: 0.5508, A: 0.9010, P: 0.8632, R: 0.8145, F1: 0.8382, AUC: 0.9535
+Epoch 23/10000: LR: 1.0e-05 | Train L: 0.2264, A: 0.9386 | Val L: 0.5686, A: 0.9010, P: 0.8696, R: 0.8065, F1: 0.8368, AUC: 0.9529
+Epoch 24/10000: LR: 1.0e-05 | Train L: 0.1995, A: 0.9468 | Val L: 0.5272, A: 0.9010, P: 0.8400, R: 0.8468, F1: 0.8434, AUC: 0.9553
+Epoch 25/10000: LR: 1.0e-05 | Train L: 0.2066, A: 0.9402 | Val L: 0.5248, A: 0.9036, P: 0.8583, R: 0.8306, F1: 0.8443, AUC: 0.9546
+Epoch 26/10000: LR: 1.0e-05 | Train L: 0.2146, A: 0.9408 | Val L: 0.5891, A: 0.9086, P: 0.8793, R: 0.8226, F1: 0.8500, AUC: 0.9527
+Epoch 27/10000: LR: 1.0e-05 | Train L: 0.1811, A: 0.9496 | Val L: 0.5552, A: 0.9010, P: 0.8632, R: 0.8145, F1: 0.8382, AUC: 0.9544
+Epoch 28/10000: LR: 1.0e-06 | Train L: 0.2146, A: 0.9391 | Val L: 0.5225, A: 0.9010, P: 0.8512, R: 0.8306, F1: 0.8408, AUC: 0.9547
+Epoch 29/10000: LR: 1.0e-06 | Train L: 0.2250, A: 0.9380 | Val L: 0.5663, A: 0.9036, P: 0.8772, R: 0.8065, F1: 0.8403, AUC: 0.9530
+Epoch 30/10000: LR: 1.0e-06 | Train L: 0.2000, A: 0.9468 | Val L: 0.5448, A: 0.9036, P: 0.8644, R: 0.8226, F1: 0.8430, AUC: 0.9547
+  ↳ Periodic checkpoint saved to checkpoints/epoch_030_f1_0.8430.pth
+Epoch 31/10000: LR: 1.0e-06 | Train L: 0.1723, A: 0.9529 | Val L: 0.5271, A: 0.9010, P: 0.8455, R: 0.8387, F1: 0.8421, AUC: 0.9555
+Epoch 32/10000: LR: 1.0e-06 | Train L: 0.1980, A: 0.9496 | Val L: 0.5380, A: 0.9010, P: 0.8632, R: 0.8145, F1: 0.8382, AUC: 0.9543
+Epoch 33/10000: LR: 1.0e-06 | Train L: 0.1856, A: 0.9485 | Val L: 0.5404, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9549
+Epoch 34/10000: LR: 1.0e-07 | Train L: 0.1893, A: 0.9501 | Val L: 0.5356, A: 0.8985, P: 0.8443, R: 0.8306, F1: 0.8374, AUC: 0.9552
+Epoch 35/10000: LR: 1.0e-07 | Train L: 0.1656, A: 0.9539 | Val L: 0.5363, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9550
+Epoch 36/10000: LR: 1.0e-07 | Train L: 0.1932, A: 0.9512 | Val L: 0.5292, A: 0.9010, P: 0.8512, R: 0.8306, F1: 0.8408, AUC: 0.9536
+Epoch 37/10000: LR: 1.0e-07 | Train L: 0.1961, A: 0.9468 | Val L: 0.5331, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9551
+Epoch 38/10000: LR: 1.0e-07 | Train L: 0.1869, A: 0.9501 | Val L: 0.5551, A: 0.9112, P: 0.8803, R: 0.8306, F1: 0.8548, AUC: 0.9524
+  ↳ New best Val F1: 0.8548. Model saved to best_microcrack_detector.pth
+Epoch 39/10000: LR: 1.0e-07 | Train L: 0.2084, A: 0.9408 | Val L: 0.5518, A: 0.9010, P: 0.8571, R: 0.8226, F1: 0.8395, AUC: 0.9552
+Epoch 40/10000: LR: 1.0e-07 | Train L: 0.1939, A: 0.9446 | Val L: 0.5625, A: 0.9036, P: 0.8644, R: 0.8226, F1: 0.8430, AUC: 0.9526
+  ↳ Periodic checkpoint saved to checkpoints/epoch_040_f1_0.8430.pth
+Epoch 41/10000: LR: 1.0e-07 | Train L: 0.1694, A: 0.9534 | Val L: 0.5360, A: 0.8985, P: 0.8443, R: 0.8306, F1: 0.8374, AUC: 0.9541
+Epoch 42/10000: LR: 1.0e-07 | Train L: 0.1857, A: 0.9446 | Val L: 0.5227, A: 0.9036, P: 0.8525, R: 0.8387, F1: 0.8455, AUC: 0.9549
+Epoch 43/10000: LR: 1.0e-07 | Train L: 0.1766, A: 0.9479 | Val L: 0.5371, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9550
+Epoch 44/10000: LR: 1.0e-07 | Train L: 0.1516, A: 0.9572 | Val L: 0.5407, A: 0.9086, P: 0.8729, R: 0.8306, F1: 0.8512, AUC: 0.9534
+Epoch 45/10000: LR: 1.0e-08 | Train L: 0.1735, A: 0.9550 | Val L: 0.5266, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9553
+Epoch 46/10000: LR: 1.0e-08 | Train L: 0.1847, A: 0.9490 | Val L: 0.5434, A: 0.9036, P: 0.8644, R: 0.8226, F1: 0.8430, AUC: 0.9533
+Epoch 47/10000: LR: 1.0e-08 | Train L: 0.1810, A: 0.9485 | Val L: 0.5377, A: 0.9036, P: 0.8644, R: 0.8226, F1: 0.8430, AUC: 0.9544
+Epoch 48/10000: LR: 1.0e-08 | Train L: 0.1755, A: 0.9534 | Val L: 0.5502, A: 0.9036, P: 0.8583, R: 0.8306, F1: 0.8443, AUC: 0.9547
+Epoch 49/10000: LR: 1.0e-08 | Train L: 0.1958, A: 0.9457 | Val L: 0.5213, A: 0.9036, P: 0.8525, R: 0.8387, F1: 0.8455, AUC: 0.9562
+Epoch 50/10000: LR: 1.0e-08 | Train L: 0.1952, A: 0.9441 | Val L: 0.5421, A: 0.9112, P: 0.8803, R: 0.8306, F1: 0.8548, AUC: 0.9543
+  ↳ Periodic checkpoint saved to checkpoints/epoch_050_f1_0.8548.pth
+Epoch 51/10000: LR: 1.0e-08 | Train L: 0.1664, A: 0.9529 | Val L: 0.5411, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9542
+Epoch 52/10000: LR: 1.0e-08 | Train L: 0.1773, A: 0.9539 | Val L: 0.5310, A: 0.8959, P: 0.8374, R: 0.8306, F1: 0.8340, AUC: 0.9543
+Epoch 53/10000: LR: 1.0e-08 | Train L: 0.1852, A: 0.9457 | Val L: 0.5167, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9554
+Epoch 54/10000: LR: 1.0e-08 | Train L: 0.1933, A: 0.9419 | Val L: 0.5381, A: 0.9061, P: 0.8655, R: 0.8306, F1: 0.8477, AUC: 0.9551
+Epoch 55/10000: LR: 1.0e-08 | Train L: 0.2161, A: 0.9441 | Val L: 0.5499, A: 0.9061, P: 0.8655, R: 0.8306, F1: 0.8477, AUC: 0.9539
+Epoch 56/10000: LR: 1.0e-08 | Train L: 0.1945, A: 0.9485 | Val L: 0.5567, A: 0.9010, P: 0.8632, R: 0.8145, F1: 0.8382, AUC: 0.9530
+Epoch 57/10000: LR: 1.0e-08 | Train L: 0.1901, A: 0.9496 | Val L: 0.5199, A: 0.8985, P: 0.8387, R: 0.8387, F1: 0.8387, AUC: 0.9563
+Epoch 58/10000: LR: 1.0e-08 | Train L: 0.1929, A: 0.9441 | Val L: 0.5177, A: 0.8934, P: 0.8254, R: 0.8387, F1: 0.8320, AUC: 0.9563
+Epoch 59/10000: LR: 1.0e-08 | Train L: 0.1720, A: 0.9556 | Val L: 0.5866, A: 0.9036, P: 0.8772, R: 0.8065, F1: 0.8403, AUC: 0.9529
+Epoch 60/10000: LR: 1.0e-08 | Train L: 0.2132, A: 0.9380 | Val L: 0.5553, A: 0.9086, P: 0.8729, R: 0.8306, F1: 0.8512, AUC: 0.9534
+  ↳ Periodic checkpoint saved to checkpoints/epoch_060_f1_0.8512.pth
+Epoch 61/10000: LR: 1.0e-08 | Train L: 0.1767, A: 0.9512 | Val L: 0.5389, A: 0.9036, P: 0.8583, R: 0.8306, F1: 0.8443, AUC: 0.9539
+Epoch 62/10000: LR: 1.0e-08 | Train L: 0.2064, A: 0.9435 | Val L: 0.5507, A: 0.9010, P: 0.8571, R: 0.8226, F1: 0.8395, AUC: 0.9553
+Epoch 63/10000: LR: 1.0e-08 | Train L: 0.1804, A: 0.9474 | Val L: 0.5431, A: 0.9061, P: 0.8655, R: 0.8306, F1: 0.8477, AUC: 0.9539
+Epoch 64/10000: LR: 1.0e-08 | Train L: 0.1982, A: 0.9413 | Val L: 0.5592, A: 0.9061, P: 0.8783, R: 0.8145, F1: 0.8452, AUC: 0.9546
+Epoch 65/10000: LR: 1.0e-08 | Train L: 0.1829, A: 0.9539 | Val L: 0.5438, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9549
+Epoch 66/10000: LR: 1.0e-08 | Train L: 0.1789, A: 0.9534 | Val L: 0.5235, A: 0.9010, P: 0.8512, R: 0.8306, F1: 0.8408, AUC: 0.9550
+Epoch 67/10000: LR: 1.0e-08 | Train L: 0.1859, A: 0.9474 | Val L: 0.5333, A: 0.9010, P: 0.8455, R: 0.8387, F1: 0.8421, AUC: 0.9552
+Epoch 68/10000: LR: 1.0e-08 | Train L: 0.2002, A: 0.9463 | Val L: 0.5197, A: 0.9010, P: 0.8455, R: 0.8387, F1: 0.8421, AUC: 0.9557
+Epoch 69/10000: LR: 1.0e-08 | Train L: 0.2132, A: 0.9364 | Val L: 0.5559, A: 0.9010, P: 0.8632, R: 0.8145, F1: 0.8382, AUC: 0.9526
+Epoch 70/10000: LR: 1.0e-08 | Train L: 0.1906, A: 0.9479 | Val L: 0.5139, A: 0.8909, P: 0.8189, R: 0.8387, F1: 0.8287, AUC: 0.9557
+  ↳ Periodic checkpoint saved to checkpoints/epoch_070_f1_0.8287.pth
+Epoch 71/10000: LR: 1.0e-08 | Train L: 0.1794, A: 0.9529 | Val L: 0.5268, A: 0.9010, P: 0.8455, R: 0.8387, F1: 0.8421, AUC: 0.9556
+Epoch 72/10000: LR: 1.0e-08 | Train L: 0.1852, A: 0.9479 | Val L: 0.5515, A: 0.9061, P: 0.8655, R: 0.8306, F1: 0.8477, AUC: 0.9543
+Epoch 73/10000: LR: 1.0e-08 | Train L: 0.1832, A: 0.9468 | Val L: 0.5311, A: 0.9010, P: 0.8455, R: 0.8387, F1: 0.8421, AUC: 0.9542
+Epoch 74/10000: LR: 1.0e-08 | Train L: 0.1748, A: 0.9529 | Val L: 0.5403, A: 0.9086, P: 0.8729, R: 0.8306, F1: 0.8512, AUC: 0.9543
+Epoch 75/10000: LR: 1.0e-08 | Train L: 0.1985, A: 0.9375 | Val L: 0.5375, A: 0.8985, P: 0.8387, R: 0.8387, F1: 0.8387, AUC: 0.9543
+Epoch 76/10000: LR: 1.0e-08 | Train L: 0.1912, A: 0.9430 | Val L: 0.5293, A: 0.9010, P: 0.8455, R: 0.8387, F1: 0.8421, AUC: 0.9545
+Epoch 77/10000: LR: 1.0e-08 | Train L: 0.1883, A: 0.9474 | Val L: 0.5293, A: 0.8959, P: 0.8374, R: 0.8306, F1: 0.8340, AUC: 0.9544
+Epoch 78/10000: LR: 1.0e-08 | Train L: 0.1868, A: 0.9463 | Val L: 0.5483, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9533
+Epoch 79/10000: LR: 1.0e-08 | Train L: 0.1830, A: 0.9479 | Val L: 0.5527, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9532
+Epoch 80/10000: LR: 1.0e-08 | Train L: 0.1943, A: 0.9490 | Val L: 0.5530, A: 0.9086, P: 0.8729, R: 0.8306, F1: 0.8512, AUC: 0.9536
+  ↳ Periodic checkpoint saved to checkpoints/epoch_080_f1_0.8512.pth
+Epoch 81/10000: LR: 1.0e-08 | Train L: 0.1946, A: 0.9490 | Val L: 0.5222, A: 0.8985, P: 0.8387, R: 0.8387, F1: 0.8387, AUC: 0.9561
+Epoch 82/10000: LR: 1.0e-08 | Train L: 0.1833, A: 0.9479 | Val L: 0.5334, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9553
+Epoch 83/10000: LR: 1.0e-08 | Train L: 0.1884, A: 0.9430 | Val L: 0.5182, A: 0.9036, P: 0.8525, R: 0.8387, F1: 0.8455, AUC: 0.9557
+Epoch 84/10000: LR: 1.0e-08 | Train L: 0.1857, A: 0.9496 | Val L: 0.5352, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9541
+Epoch 85/10000: LR: 1.0e-08 | Train L: 0.1874, A: 0.9485 | Val L: 0.5412, A: 0.9010, P: 0.8571, R: 0.8226, F1: 0.8395, AUC: 0.9532
+Epoch 86/10000: LR: 1.0e-08 | Train L: 0.1993, A: 0.9496 | Val L: 0.5383, A: 0.9010, P: 0.8571, R: 0.8226, F1: 0.8395, AUC: 0.9536
+Epoch 87/10000: LR: 1.0e-08 | Train L: 0.1881, A: 0.9452 | Val L: 0.5545, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9529
+Epoch 88/10000: LR: 1.0e-08 | Train L: 0.1816, A: 0.9545 | Val L: 0.5139, A: 0.9010, P: 0.8400, R: 0.8468, F1: 0.8434, AUC: 0.9560
+Epoch 89/10000: LR: 1.0e-08 | Train L: 0.1880, A: 0.9545 | Val L: 0.5757, A: 0.9061, P: 0.8783, R: 0.8145, F1: 0.8452, AUC: 0.9532
+Epoch 90/10000: LR: 1.0e-08 | Train L: 0.1846, A: 0.9534 | Val L: 0.5325, A: 0.9010, P: 0.8512, R: 0.8306, F1: 0.8408, AUC: 0.9543
+  ↳ Periodic checkpoint saved to checkpoints/epoch_090_f1_0.8408.pth
+Epoch 91/10000: LR: 1.0e-08 | Train L: 0.1878, A: 0.9463 | Val L: 0.5270, A: 0.9010, P: 0.8455, R: 0.8387, F1: 0.8421, AUC: 0.9553
+Epoch 92/10000: LR: 1.0e-08 | Train L: 0.1864, A: 0.9452 | Val L: 0.5287, A: 0.9036, P: 0.8525, R: 0.8387, F1: 0.8455, AUC: 0.9548
+Epoch 93/10000: LR: 1.0e-08 | Train L: 0.2002, A: 0.9430 | Val L: 0.5606, A: 0.9061, P: 0.8783, R: 0.8145, F1: 0.8452, AUC: 0.9549
+Epoch 94/10000: LR: 1.0e-08 | Train L: 0.1725, A: 0.9534 | Val L: 0.5436, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9537
+Epoch 95/10000: LR: 1.0e-08 | Train L: 0.1857, A: 0.9572 | Val L: 0.5438, A: 0.9010, P: 0.8512, R: 0.8306, F1: 0.8408, AUC: 0.9545
+Epoch 96/10000: LR: 1.0e-08 | Train L: 0.1922, A: 0.9479 | Val L: 0.5348, A: 0.9010, P: 0.8571, R: 0.8226, F1: 0.8395, AUC: 0.9557
+Epoch 97/10000: LR: 1.0e-08 | Train L: 0.1978, A: 0.9441 | Val L: 0.5381, A: 0.8985, P: 0.8500, R: 0.8226, F1: 0.8361, AUC: 0.9541
+Epoch 98/10000: LR: 1.0e-08 | Train L: 0.1887, A: 0.9496 | Val L: 0.5150, A: 0.8985, P: 0.8387, R: 0.8387, F1: 0.8387, AUC: 0.9553
+Epoch 99/10000: LR: 1.0e-08 | Train L: 0.1750, A: 0.9512 | Val L: 0.5508, A: 0.9061, P: 0.8655, R: 0.8306, F1: 0.8477, AUC: 0.9542
+Epoch 100/10000: LR: 1.0e-08 | Train L: 0.1817, A: 0.9529 | Val L: 0.5602, A: 0.9036, P: 0.8707, R: 0.8145, F1: 0.8417, AUC: 0.9537
+  ↳ Periodic checkpoint saved to checkpoints/epoch_100_f1_0.8417.pth
+Epoch 101/10000: LR: 1.0e-08 | Train L: 0.1743, A: 0.9529 | Val L: 0.5416, A: 0.9036, P: 0.8583, R: 0.8306, F1: 0.8443, AUC: 0.9548
+Epoch 102/10000: LR: 1.0e-08 | Train L: 0.2019, A: 0.9468 | Val L: 0.5404, A: 0.9036, P: 0.8583, R: 0.8306, F1: 0.8443, AUC: 0.9546
+Epoch 103/10000: LR: 1.0e-08 | Train L: 0.2171, A: 0.9364 | Val L: 0.5608, A: 0.9086, P: 0.8793, R: 0.8226, F1: 0.8500, AUC: 0.9536
+Epoch 104/10000: LR: 1.0e-08 | Train L: 0.1911, A: 0.9529 | Val L: 0.5381, A: 0.9061, P: 0.8655, R: 0.8306, F1: 0.8477, AUC: 0.9550
+Epoch 105/10000: LR: 1.0e-08 | Train L: 0.1783, A: 0.9518 | Val L: 0.5610, A: 0.9010, P: 0.8632, R: 0.8145, F1: 0.8382, AUC: 0.9536
+Epoch 106/10000: LR: 1.0e-08 | Train L: 0.1854, A: 0.9479 | Val L: 0.5336, A: 0.9036, P: 0.8583, R: 0.8306, F1: 0.8443, AUC: 0.9537
+Epoch 107/10000: LR: 1.0e-08 | Train L: 0.1923, A: 0.9424 | Val L: 0.5190, A: 0.8985, P: 0.8387, R: 0.8387, F1: 0.8387, AUC: 0.9543
+Epoch 108/10000: LR: 1.0e-08 | Train L: 0.1689, A: 0.9545 | Val L: 0.5471, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9544
+Epoch 109/10000: LR: 1.0e-08 | Train L: 0.1968, A: 0.9496 | Val L: 0.5683, A: 0.9036, P: 0.8707, R: 0.8145, F1: 0.8417, AUC: 0.9534
+Epoch 110/10000: LR: 1.0e-08 | Train L: 0.1985, A: 0.9424 | Val L: 0.5231, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9550
+  ↳ Periodic checkpoint saved to checkpoints/epoch_110_f1_0.8490.pth
+Epoch 111/10000: LR: 1.0e-08 | Train L: 0.1810, A: 0.9501 | Val L: 0.5467, A: 0.9086, P: 0.8729, R: 0.8306, F1: 0.8512, AUC: 0.9555
+Epoch 112/10000: LR: 1.0e-08 | Train L: 0.1774, A: 0.9507 | Val L: 0.5480, A: 0.9036, P: 0.8583, R: 0.8306, F1: 0.8443, AUC: 0.9541
+Epoch 113/10000: LR: 1.0e-08 | Train L: 0.2034, A: 0.9485 | Val L: 0.5404, A: 0.9036, P: 0.8583, R: 0.8306, F1: 0.8443, AUC: 0.9539
+Epoch 114/10000: LR: 1.0e-08 | Train L: 0.1988, A: 0.9490 | Val L: 0.5547, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9535
+Epoch 115/10000: LR: 1.0e-08 | Train L: 0.1878, A: 0.9518 | Val L: 0.5577, A: 0.9036, P: 0.8707, R: 0.8145, F1: 0.8417, AUC: 0.9547
+Epoch 116/10000: LR: 1.0e-08 | Train L: 0.1916, A: 0.9468 | Val L: 0.5520, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9529
+Epoch 117/10000: LR: 1.0e-08 | Train L: 0.1803, A: 0.9512 | Val L: 0.5682, A: 0.9061, P: 0.8783, R: 0.8145, F1: 0.8452, AUC: 0.9533
+Epoch 118/10000: LR: 1.0e-08 | Train L: 0.1802, A: 0.9534 | Val L: 0.5411, A: 0.9036, P: 0.8583, R: 0.8306, F1: 0.8443, AUC: 0.9547
+Epoch 119/10000: LR: 1.0e-08 | Train L: 0.1969, A: 0.9380 | Val L: 0.5603, A: 0.9061, P: 0.8783, R: 0.8145, F1: 0.8452, AUC: 0.9531
+Epoch 120/10000: LR: 1.0e-08 | Train L: 0.1950, A: 0.9435 | Val L: 0.5614, A: 0.9061, P: 0.8783, R: 0.8145, F1: 0.8452, AUC: 0.9544
+  ↳ Periodic checkpoint saved to checkpoints/epoch_120_f1_0.8452.pth
+Epoch 121/10000: LR: 1.0e-08 | Train L: 0.1998, A: 0.9408 | Val L: 0.5567, A: 0.9061, P: 0.8718, R: 0.8226, F1: 0.8465, AUC: 0.9528
+Epoch 122/10000: LR: 1.0e-08 | Train L: 0.2053, A: 0.9424 | Val L: 0.5631, A: 0.9036, P: 0.8707, R: 0.8145, F1: 0.8417, AUC: 0.9530
+Epoch 123/10000: LR: 1.0e-08 | Train L: 0.1711, A: 0.9534 | Val L: 0.5931, A: 0.9036, P: 0.8772, R: 0.8065, F1: 0.8403, AUC: 0.9518
+Epoch 124/10000: LR: 1.0e-08 | Train L: 0.1743, A: 0.9490 | Val L: 0.5275, A: 0.9036, P: 0.8525, R: 0.8387, F1: 0.8455, AUC: 0.9550
+Epoch 125/10000: LR: 1.0e-08 | Train L: 0.1798, A: 0.9561 | Val L: 0.5492, A: 0.9086, P: 0.8729, R: 0.8306, F1: 0.8512, AUC: 0.9549
+Epoch 126/10000: LR: 1.0e-08 | Train L: 0.1872, A: 0.9474 | Val L: 0.5365, A: 0.9061, P: 0.8655, R: 0.8306, F1: 0.8477, AUC: 0.9542
+Epoch 127/10000: LR: 1.0e-08 | Train L: 0.1930, A: 0.9507 | Val L: 0.5481, A: 0.9036, P: 0.8583, R: 0.8306, F1: 0.8443, AUC: 0.9540
+Epoch 128/10000: LR: 1.0e-08 | Train L: 0.1814, A: 0.9479 | Val L: 0.5676, A: 0.9036, P: 0.8707, R: 0.8145, F1: 0.8417, AUC: 0.9527
+Epoch 129/10000: LR: 1.0e-08 | Train L: 0.1755, A: 0.9529 | Val L: 0.5421, A: 0.9086, P: 0.8729, R: 0.8306, F1: 0.8512, AUC: 0.9545
+Epoch 130/10000: LR: 1.0e-08 | Train L: 0.1865, A: 0.9474 | Val L: 0.5355, A: 0.8959, P: 0.8374, R: 0.8306, F1: 0.8340, AUC: 0.9544
+  ↳ Periodic checkpoint saved to checkpoints/epoch_130_f1_0.8340.pth
+Epoch 131/10000: LR: 1.0e-08 | Train L: 0.1690, A: 0.9518 | Val L: 0.5535, A: 0.9036, P: 0.8644, R: 0.8226, F1: 0.8430, AUC: 0.9537
+Epoch 132/10000: LR: 1.0e-08 | Train L: 0.1682, A: 0.9463 | Val L: 0.5434, A: 0.9086, P: 0.8729, R: 0.8306, F1: 0.8512, AUC: 0.9539
+Epoch 133/10000: LR: 1.0e-08 | Train L: 0.1891, A: 0.9435 | Val L: 0.5302, A: 0.9061, P: 0.8595, R: 0.8387, F1: 0.8490, AUC: 0.9566
+Epoch 134/10000: LR: 1.0e-08 | Train L: 0.1914, A: 0.9496 | Val L: 0.5496, A: 0.9086, P: 0.8729, R: 0.8306, F1: 0.8512, AUC: 0.9530
+Epoch 135/10000: LR: 1.0e-08 | Train L: 0.1985, A: 0.9430 | Val L: 0.5183, A: 0.8985, P: 0.8387, R: 0.8387, F1: 0.8387, AUC: 0.9551
+Epoch 136/10000: LR: 1.0e-08 | Train L: 0.1930, A: 0.9490 | Val L: 0.5270, A: 0.9010, P: 0.8455, R: 0.8387, F1: 0.8421, AUC: 0.9553
+Epoch 137/10000: LR: 1.0e-08 | Train L: 0.1909, A: 0.9446 | Val L: 0.5717, A: 0.9010, P: 0.8696, R: 0.8065, F1: 0.8368, AUC: 0.9536
+Epoch 138/10000: LR: 1.0e-08 | Train L: 0.1943, A: 0.9457 | Val L: 0.5457, A: 0.9036, P: 0.8644, R: 0.8226, F1: 0.8430, AUC: 0.9550
+Early stopping at epoch 138 due to no improvement in Val F1 for 100 epochs.
+Training history saved to training_history.json
+
+Loading best model from best_microcrack_detector.pth for final test evaluation...
+
+--- Test Set Evaluation ---
+Test Loss: 0.5406
+Test Accuracy: 0.9188
+Test Precision: 0.9027
+Test Recall: 0.8293
+Test F1-Score: 0.8644
+Test AUC: 0.9534
+
+Test Confusion Matrix:
+
+--- End of Script ---
