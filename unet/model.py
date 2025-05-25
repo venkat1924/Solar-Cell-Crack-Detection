@@ -4,7 +4,6 @@ import torch.nn as nn
 import torchvision.models as models
 import torch.nn.functional as F # Import F for interpolate
 
-# ... (ConvBNAct, DilatedBottleneck, DecoderBlock, UpBlock classes remain the same) ...
 class ConvBNAct(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size=3, padding=1, bias=False):
         super().__init__()
@@ -50,13 +49,11 @@ class UNetWithVGG16BN(nn.Module):
     def __init__(self, n_classes, pretrained=True):
         super().__init__()
         self.n_classes = n_classes
-        # Ensure you are using an up-to-date way to get pretrained weights if VGG16_BN_Weights.IMAGENET1K_V1 is deprecated
-        # For older torchvision, models.vgg16_bn(pretrained=pretrained) might be used.
-        # For newer (0.13+), the weights enum is preferred.
+
         if hasattr(models, 'VGG16_BN_Weights'):
             weights = models.VGG16_BN_Weights.IMAGENET1K_V1 if pretrained else None
             vgg16_bn_model = models.vgg16_bn(weights=weights)
-        else: # Fallback for older torchvision
+        else: 
             vgg16_bn_model = models.vgg16_bn(pretrained=pretrained)
             
         features = vgg16_bn_model.features
