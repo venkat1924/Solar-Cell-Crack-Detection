@@ -12,7 +12,7 @@ CONFIG = {
     "BATCH_SIZE": 12,
     "LEARNING_RATE": 1e-4,
     "WEIGHT_DECAY": 1e-4,
-    "NUM_EPOCHS": 50,
+    "NUM_EPOCHS": 5000,
     "NUM_CLASSES": 5, # background, crack, cross crack, busbar, dark area
     "INPUT_SIZE": 256, # Used in FixResize, single int for square
     "PATIENCE_EARLY_STOPPING": 20,
