@@ -3,3 +3,4 @@ unet/crack_segmentation
 unet/module_images
 unet/best_elpv_unet_vgg16bn_orig_data.pth
 unet/checkpoints_elpv_orig_data/
+unet/checkpoints
